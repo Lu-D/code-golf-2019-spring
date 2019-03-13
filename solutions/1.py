@@ -1,4 +1,4 @@
-def is_prime(n):
+def p(n):
     for i in range(3, n):
         if n % i == 0:
             return False
@@ -10,7 +10,7 @@ for i in range (2, 100000):
 	if b - a == 2 and not c:
 		print(a, " ", b, "\n")
 		c = True
-	if is_prime(i):
+	if p(i):
 		a = b
 		b = i
 		c = False
